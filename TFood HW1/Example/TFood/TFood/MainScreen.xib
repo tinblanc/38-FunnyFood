@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainScreen">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zab-v3-rb4">
+                    <rect key="frame" x="54" y="165" width="90" height="89"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="89" id="vg2-QQ-V3E"/>
+                        <constraint firstAttribute="width" constant="90" id="woE-Zn-0Nr"/>
+                    </constraints>
+                    <state key="normal" image="veganFood.png"/>
+                    <connections>
+                        <action selector="btnVeganFood:" destination="-1" eventType="touchUpInside" id="Vat-9H-VM7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZN-gp-Svx">
+                    <rect key="frame" x="230" y="180" width="100" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="09J-Ju-71s"/>
+                        <constraint firstAttribute="height" constant="74" id="UTv-71-ojX"/>
+                    </constraints>
+                    <state key="normal" image="nonVeganFood.png"/>
+                    <connections>
+                        <action selector="btnNonVeganFood:" destination="-1" eventType="touchUpInside" id="6rK-lR-qgr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhZ-FQ-1zy">
+                    <rect key="frame" x="231" y="341" width="94" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="5Dt-g3-9gc"/>
+                        <constraint firstAttribute="width" constant="94" id="f29-N0-sU6"/>
+                    </constraints>
+                    <state key="normal" image="drink.png"/>
+                    <connections>
+                        <action selector="btnDrink:" destination="-1" eventType="touchUpInside" id="l2P-Vh-yxI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOD-ed-hIE">
+                    <rect key="frame" x="51" y="345" width="96" height="82"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="82" id="GNY-pi-0oZ"/>
+                        <constraint firstAttribute="width" constant="96" id="MDT-i2-gIY"/>
+                    </constraints>
+                    <state key="normal" image="fastFood.png"/>
+                    <connections>
+                        <action selector="btnFastFood:" destination="-1" eventType="touchUpInside" id="yKr-DW-TZJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegan Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Z4-n3-fUV">
+                    <rect key="frame" x="50" y="262" width="98" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="U5A-Mh-ufy"/>
+                        <constraint firstAttribute="width" constant="98" id="e7q-K8-Wbi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Non Vegan Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es7-b7-6RG">
+                    <rect key="frame" x="214" y="262" width="131" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="H5a-Wg-pKR"/>
+                        <constraint firstAttribute="width" constant="131" id="ZQD-17-Hub"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fast Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhf-bG-Gha">
+                    <rect key="frame" x="54" y="435" width="90" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="CAU-om-IGT"/>
+                        <constraint firstAttribute="height" constant="21" id="rsA-kM-3dE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1SX-EO-Jpn">
+                    <rect key="frame" x="172" y="318" width="30" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="VzI-LI-mAd"/>
+                        <constraint firstAttribute="width" constant="30" id="iLU-wW-llT"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drink" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ks-5c-9hy">
+                    <rect key="frame" x="245" y="439" width="80" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="AmN-4n-m2X"/>
+                        <constraint firstAttribute="width" constant="80" id="ncD-s5-bYO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.76470588235294112" green="0.12549019607843137" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="6Z4-n3-fUV" firstAttribute="centerX" secondItem="zab-v3-rb4" secondAttribute="centerX" id="0o3-Mv-Yd7"/>
+                <constraint firstItem="1SX-EO-Jpn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="36b-W6-2Nm"/>
+                <constraint firstItem="NOD-ed-hIE" firstAttribute="top" secondItem="1SX-EO-Jpn" secondAttribute="bottom" constant="-4" id="6f7-YM-D8i"/>
+                <constraint firstItem="bhZ-FQ-1zy" firstAttribute="top" secondItem="1SX-EO-Jpn" secondAttribute="bottom" constant="-8" id="CAh-za-cJ6"/>
+                <constraint firstItem="6Z4-n3-fUV" firstAttribute="top" secondItem="zab-v3-rb4" secondAttribute="bottom" constant="8" id="Fne-6v-ayg"/>
+                <constraint firstItem="Es7-b7-6RG" firstAttribute="top" secondItem="dZN-gp-Svx" secondAttribute="bottom" constant="8" id="FpJ-nd-fhd"/>
+                <constraint firstItem="1SX-EO-Jpn" firstAttribute="leading" secondItem="NOD-ed-hIE" secondAttribute="trailing" constant="25.5" id="LAY-eR-Iqg"/>
+                <constraint firstItem="1SX-EO-Jpn" firstAttribute="top" secondItem="zab-v3-rb4" secondAttribute="bottom" constant="64" id="MmA-VR-i57"/>
+                <constraint firstItem="Es7-b7-6RG" firstAttribute="centerX" secondItem="dZN-gp-Svx" secondAttribute="centerX" id="VwS-P2-M0U"/>
+                <constraint firstItem="dZN-gp-Svx" firstAttribute="leading" secondItem="1SX-EO-Jpn" secondAttribute="trailing" constant="27.5" id="Xla-dK-n4u"/>
+                <constraint firstItem="Zhf-bG-Gha" firstAttribute="top" secondItem="NOD-ed-hIE" secondAttribute="bottom" constant="8" id="ZHk-hg-DPx"/>
+                <constraint firstItem="1SX-EO-Jpn" firstAttribute="leading" secondItem="zab-v3-rb4" secondAttribute="trailing" constant="28.5" id="ceG-Jp-C3g"/>
+                <constraint firstItem="2Ks-5c-9hy" firstAttribute="top" secondItem="bhZ-FQ-1zy" secondAttribute="bottom" constant="8" id="hBl-Ep-u0i"/>
+                <constraint firstItem="Zhf-bG-Gha" firstAttribute="centerX" secondItem="NOD-ed-hIE" secondAttribute="centerX" id="n4W-yo-0xy"/>
+                <constraint firstItem="bhZ-FQ-1zy" firstAttribute="leading" secondItem="1SX-EO-Jpn" secondAttribute="trailing" constant="28.5" id="onv-sv-JKf"/>
+                <constraint firstItem="2Ks-5c-9hy" firstAttribute="centerX" secondItem="bhZ-FQ-1zy" secondAttribute="centerX" constant="7" id="q8D-rQ-crn"/>
+                <constraint firstItem="1SX-EO-Jpn" firstAttribute="top" secondItem="dZN-gp-Svx" secondAttribute="bottom" constant="64" id="wZb-bm-HxF"/>
+                <constraint firstItem="1SX-EO-Jpn" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="zV0-bq-XM2"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="drink.png" width="100" height="100"/>
+        <image name="fastFood.png" width="100" height="76"/>
+        <image name="nonVeganFood.png" width="100" height="68"/>
+        <image name="veganFood.png" width="100" height="100"/>
+    </resources>
+</document>

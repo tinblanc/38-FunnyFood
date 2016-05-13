@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface AddressScreen : UIViewController
-
+@property (nonatomic, strong) UITableView* tableView;
 @end

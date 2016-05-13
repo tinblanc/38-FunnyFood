@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailAddress">
+            <connections>
+                <outlet property="imgLogo" destination="Edy-dp-Nqa" id="ju3-rz-yR3"/>
+                <outlet property="lblLocation" destination="x4b-AU-37N" id="Qb6-Eu-oiK"/>
+                <outlet property="lblName" destination="P7R-i6-6m4" id="krZ-b2-LjN"/>
+                <outlet property="scrollView" destination="zbA-B1-u0Q" id="TEy-Vo-NVN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="zbA-B1-u0Q">
+                    <rect key="frame" x="0.0" y="24" width="375" height="264"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIy-tH-HFh">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starbucksMap.png" translatesAutoresizingMaskIntoConstraints="NO" id="7ox-e2-NVT">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="7ox-e2-NVT" secondAttribute="bottom" id="FGE-zo-mj2"/>
+                                <constraint firstItem="7ox-e2-NVT" firstAttribute="top" secondItem="EIy-tH-HFh" secondAttribute="top" id="HhT-GV-jgD"/>
+                                <constraint firstAttribute="trailing" secondItem="7ox-e2-NVT" secondAttribute="trailing" id="Lh4-W9-QhA"/>
+                                <constraint firstItem="7ox-e2-NVT" firstAttribute="leading" secondItem="EIy-tH-HFh" secondAttribute="leading" id="iSh-0I-sOM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="EIy-tH-HFh" secondAttribute="bottom" id="Kdm-kW-dJC"/>
+                        <constraint firstItem="EIy-tH-HFh" firstAttribute="height" secondItem="zbA-B1-u0Q" secondAttribute="height" id="L7w-TR-SSg"/>
+                        <constraint firstAttribute="height" constant="264" id="VGy-yN-bUk"/>
+                        <constraint firstAttribute="trailing" secondItem="EIy-tH-HFh" secondAttribute="trailing" id="ksF-gn-cuX"/>
+                        <constraint firstItem="EIy-tH-HFh" firstAttribute="top" secondItem="zbA-B1-u0Q" secondAttribute="top" id="wSY-iv-pdZ"/>
+                        <constraint firstItem="EIy-tH-HFh" firstAttribute="leading" secondItem="zbA-B1-u0Q" secondAttribute="leading" id="xMs-uA-Pqo"/>
+                    </constraints>
+                </scrollView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starbucks.png" translatesAutoresizingMaskIntoConstraints="NO" id="Edy-dp-Nqa">
+                    <rect key="frame" x="25" y="296" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="Dfz-yV-zzC"/>
+                        <constraint firstAttribute="width" constant="75" id="ujJ-By-voJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starbucks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7R-i6-6m4">
+                    <rect key="frame" x="124" y="299" width="205" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="205" id="65R-cW-sHQ"/>
+                        <constraint firstAttribute="height" constant="18" id="TLC-4H-9xC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" red="0.41293797348484851" green="0.41293797348484851" blue="0.41293797348484851" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06:00 AM - 10:30 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6y7-A3-JYi">
+                    <rect key="frame" x="124" y="351" width="205" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="ghW-Wb-tCQ"/>
+                        <constraint firstAttribute="width" constant="205" id="jUs-sr-Cnq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.4129379735" green="0.4129379735" blue="0.4129379735" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="United States" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4b-AU-37N">
+                    <rect key="frame" x="124" y="325" width="205" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="205" id="jEp-nR-9zV"/>
+                        <constraint firstAttribute="height" constant="18" id="wJ4-aa-iKE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.4129379735" green="0.4129379735" blue="0.4129379735" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="P7R-i6-6m4" firstAttribute="leading" secondItem="Edy-dp-Nqa" secondAttribute="trailing" constant="24" id="5VA-nQ-tat"/>
+                <constraint firstItem="zbA-B1-u0Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="XTD-Ow-Vue"/>
+                <constraint firstItem="6y7-A3-JYi" firstAttribute="top" secondItem="x4b-AU-37N" secondAttribute="bottom" constant="8" id="cQH-30-fTn"/>
+                <constraint firstItem="Edy-dp-Nqa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="dLo-Y6-UMV"/>
+                <constraint firstItem="EIy-tH-HFh" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="dP5-lf-yQd"/>
+                <constraint firstItem="x4b-AU-37N" firstAttribute="leading" secondItem="Edy-dp-Nqa" secondAttribute="trailing" constant="24" id="g2m-8d-VsA"/>
+                <constraint firstItem="Edy-dp-Nqa" firstAttribute="top" secondItem="7ox-e2-NVT" secondAttribute="bottom" constant="8" id="h2V-tM-qON"/>
+                <constraint firstItem="6y7-A3-JYi" firstAttribute="leading" secondItem="Edy-dp-Nqa" secondAttribute="trailing" constant="24" id="jET-md-md9"/>
+                <constraint firstItem="zbA-B1-u0Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kzy-71-Rsn"/>
+                <constraint firstAttribute="trailing" secondItem="zbA-B1-u0Q" secondAttribute="trailing" id="nRN-C7-fND"/>
+                <constraint firstItem="P7R-i6-6m4" firstAttribute="top" secondItem="7ox-e2-NVT" secondAttribute="bottom" constant="11" id="qyF-fN-JHa"/>
+                <constraint firstItem="x4b-AU-37N" firstAttribute="top" secondItem="P7R-i6-6m4" secondAttribute="bottom" constant="8" id="uwH-7z-201"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="347.5" y="447.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="starbucks.png" width="1024" height="1024"/>
+        <image name="starbucksMap.png" width="1312" height="944"/>
+    </resources>
+</document>

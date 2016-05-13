@@ -10,6 +10,7 @@
 #import "SaleCustomCell.h"
 #import "Food.h"
 #import "ShowSaleDetailScreen.h"
+#import "ArrayFood.h"
 
 @interface SaleOffScreen ()
 
@@ -17,12 +18,16 @@
 
 @implementation SaleOffScreen
 {
-    NSMutableArray* arraySale;
+    NSMutableArray* arrayDataSale;
+    NSMutableArray* arrayDataSaleFilter;
 }
 
 -(void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self createFoodData];
+    arrayDataSaleFilter = [[NSMutableArray alloc] init];
+    [self filterDataSale];
+    
     [self.tableView reloadData];
 }
 
@@ -32,30 +37,19 @@
  
 }
 
+
+-(void) filterDataSale{
+    for (Food* food in arrayDataSale) {
+        if(![food.saleOff isEqualToString:@""]){
+            [arrayDataSaleFilter addObject:food];
+        }
+    }
+}
+
 #pragma mark - Create Data
 
 -(void) createFoodData{
-    Food* veganFood2 = [[Food alloc] initWithName:@"Limburg pie" andPrice:@"$44,00" withImage:@"vegan2.png" andSaleOff:@"-20%"];
-    Food* veganFood4 = [[Food alloc] initWithName:@"Macaron Cake" andPrice:@"$25,00" withImage:@"vegan4.png" andSaleOff:@"-30%"];
-    Food* veganFood5 = [[Food alloc] initWithName:@"Black Forest" andPrice:@"$46,00" withImage:@"vegan5.png" andSaleOff:@"-10%"];
-    Food* veganFood6 = [[Food alloc] initWithName:@"Sachertorte" andPrice:@"$41,00" withImage:@"vegan6.png" andSaleOff:@"-10%"];
-    
-    Food* nonVeganFood1 = [[Food alloc] initWithName:@"Crudos" andPrice:@"$53,00" withImage:@"nonvegan1.png" andSaleOff:@"-10%"];
-    Food* nonVeganFood3 = [[Food alloc] initWithName:@"Yookhwe" andPrice:@"$23,00" withImage:@"nonvegan3.png" andSaleOff:@"-20%"];
-    Food* nonVeganFood4 = [[Food alloc] initWithName:@"Kitfo Ethiopia" andPrice:@"$44,00" withImage:@"nonvegan4.png" andSaleOff:@"-15%"];
-    Food* nonVeganFood6 = [[Food alloc] initWithName:@"Carne Apache" andPrice:@"$23,00" withImage:@"nonvegan6.png" andSaleOff:@"-10%"];
-    
-    Food* fastFood1 = [[Food alloc] initWithName:@"Subway" andPrice:@"$23,00" withImage:@"fastfood1.png" andSaleOff:@"-15%"];
-    Food* fastFood3 = [[Food alloc] initWithName:@"Starbucks" andPrice:@"$53,00" withImage:@"fastfood3.png" andSaleOff:@"-10%"];
-    Food* fastFood4 = [[Food alloc] initWithName:@"Burger King" andPrice:@"$44,00" withImage:@"fastfood4.png" andSaleOff:@"-20%"];
-    Food* fastFood6 = [[Food alloc] initWithName:@"Vada Pav" andPrice:@"$23,00" withImage:@"fastfood6.png" andSaleOff:@"-10%"];
-    
-    Food* drink1 = [[Food alloc] initWithName:@"Caipirinha" andPrice:@"$41,00" withImage:@"drink1.png" andSaleOff:@"-20%"];
-    Food* drink2 = [[Food alloc] initWithName:@"Yerba Mate" andPrice:@"$46,00" withImage:@"drink2.png" andSaleOff:@"-10%"];
-    Food* drink4 = [[Food alloc] initWithName:@"Jigarthanda" andPrice:@"$25,00" withImage:@"drink4.png" andSaleOff:@"-15%"];
-    Food* drink5 = [[Food alloc] initWithName:@"Cendol" andPrice:@"$53,00" withImage:@"drink5.png" andSaleOff:@"-10%"];
-    
-    arraySale = [[NSMutableArray alloc] initWithObjects:veganFood2,veganFood4,veganFood5,veganFood6,nonVeganFood1,nonVeganFood3,nonVeganFood4,nonVeganFood6,fastFood1,fastFood3,fastFood4,fastFood6,drink1,drink2,drink4,drink5, nil];
+    arrayDataSale = [[ArrayFood sharedFood] arrayFood];
 }
 
 #pragma mark - Table view data source
@@ -67,7 +61,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return arraySale.count;
+    return arrayDataSaleFilter.count;
 }
 
 
@@ -76,7 +70,7 @@
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     Food* food = [[Food alloc] init];
-    food = arraySale[indexPath.row];
+    food = arrayDataSaleFilter[indexPath.row];
     
     cell.imgFood.image = food.image;
     cell.lblName.text = food.name;
@@ -92,7 +86,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Food* food = [[Food alloc] init];
-    food = arraySale[indexPath.row];
+    food = arrayDataSaleFilter[indexPath.row];
     
     ShowSaleDetailScreen* showSaleDetailScreen = [[ShowSaleDetailScreen alloc] init];
     showSaleDetailScreen.imageFood = food.image;

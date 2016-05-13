@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		454364521CE574DF0097F1BA /* ArrayFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 454364511CE574DF0097F1BA /* ArrayFood.m */; };
 		45879D2B1CE1956400DC9250 /* DetailFoodScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 45879D2A1CE1956400DC9250 /* DetailFoodScreen.m */; };
 		45879D2F1CE1C3E200DC9250 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45879D2D1CE1C3E200DC9250 /* CustomCell.m */; };
 		45879D301CE1C3E200DC9250 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45879D2E1CE1C3E200DC9250 /* CustomCell.xib */; };
@@ -59,9 +60,21 @@
 		45E631931CE3139E00B924C4 /* SaleCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E631911CE3139E00B924C4 /* SaleCustomCell.xib */; };
 		45E6319C1CE31BB600B924C4 /* ShowSaleDetailScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E6319A1CE31BB600B924C4 /* ShowSaleDetailScreen.m */; };
 		45E6319D1CE31BB600B924C4 /* ShowSaleDetailScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E6319B1CE31BB600B924C4 /* ShowSaleDetailScreen.xib */; };
+		45E631A11CE3292800B924C4 /* AddressCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E6319F1CE3292800B924C4 /* AddressCustomCell.m */; };
+		45E631A21CE3292800B924C4 /* AddressCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E631A01CE3292800B924C4 /* AddressCustomCell.xib */; };
+		45E631A71CE32DEC00B924C4 /* starbucks.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E631A61CE32DEC00B924C4 /* starbucks.png */; };
+		45E631A91CE32ED000B924C4 /* mcdonalds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45E631A81CE32ED000B924C4 /* mcdonalds.jpg */; };
+		45E631AB1CE330A000B924C4 /* tgifridays.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E631AA1CE330A000B924C4 /* tgifridays.png */; };
+		45E631AF1CE33BF000B924C4 /* DetailAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E631AD1CE33BF000B924C4 /* DetailAddress.m */; };
+		45E631B01CE33BF000B924C4 /* DetailAddress.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E631AE1CE33BF000B924C4 /* DetailAddress.xib */; };
+		45E631B51CE33DB300B924C4 /* mcDonaldsMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E631B21CE33DB300B924C4 /* mcDonaldsMap.png */; };
+		45E631B61CE33DB300B924C4 /* starbucksMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E631B31CE33DB300B924C4 /* starbucksMap.png */; };
+		45E631B71CE33DB300B924C4 /* tgifridayMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E631B41CE33DB300B924C4 /* tgifridayMap.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		454364501CE574DF0097F1BA /* ArrayFood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayFood.h; sourceTree = "<group>"; };
+		454364511CE574DF0097F1BA /* ArrayFood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayFood.m; sourceTree = "<group>"; };
 		45879D291CE1956400DC9250 /* DetailFoodScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailFoodScreen.h; sourceTree = "<group>"; };
 		45879D2A1CE1956400DC9250 /* DetailFoodScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailFoodScreen.m; sourceTree = "<group>"; };
 		45879D2C1CE1C3E200DC9250 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
@@ -129,6 +142,18 @@
 		45E631991CE31BB600B924C4 /* ShowSaleDetailScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowSaleDetailScreen.h; sourceTree = "<group>"; };
 		45E6319A1CE31BB600B924C4 /* ShowSaleDetailScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowSaleDetailScreen.m; sourceTree = "<group>"; };
 		45E6319B1CE31BB600B924C4 /* ShowSaleDetailScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowSaleDetailScreen.xib; sourceTree = "<group>"; };
+		45E6319E1CE3292800B924C4 /* AddressCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressCustomCell.h; sourceTree = "<group>"; };
+		45E6319F1CE3292800B924C4 /* AddressCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressCustomCell.m; sourceTree = "<group>"; };
+		45E631A01CE3292800B924C4 /* AddressCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressCustomCell.xib; sourceTree = "<group>"; };
+		45E631A61CE32DEC00B924C4 /* starbucks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks.png; sourceTree = "<group>"; };
+		45E631A81CE32ED000B924C4 /* mcdonalds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mcdonalds.jpg; sourceTree = "<group>"; };
+		45E631AA1CE330A000B924C4 /* tgifridays.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tgifridays.png; sourceTree = "<group>"; };
+		45E631AC1CE33BF000B924C4 /* DetailAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailAddress.h; sourceTree = "<group>"; };
+		45E631AD1CE33BF000B924C4 /* DetailAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailAddress.m; sourceTree = "<group>"; };
+		45E631AE1CE33BF000B924C4 /* DetailAddress.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailAddress.xib; sourceTree = "<group>"; };
+		45E631B21CE33DB300B924C4 /* mcDonaldsMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mcDonaldsMap.png; sourceTree = "<group>"; };
+		45E631B31CE33DB300B924C4 /* starbucksMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucksMap.png; sourceTree = "<group>"; };
+		45E631B41CE33DB300B924C4 /* tgifridayMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tgifridayMap.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +172,8 @@
 			children = (
 				45879D321CE1D0E700DC9250 /* Food.h */,
 				45879D331CE1D0E700DC9250 /* Food.m */,
+				454364501CE574DF0097F1BA /* ArrayFood.h */,
+				454364511CE574DF0097F1BA /* ArrayFood.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -290,6 +317,12 @@
 			children = (
 				459024071CE0337100D133B2 /* AddressScreen.h */,
 				459024081CE0337100D133B2 /* AddressScreen.m */,
+				45E6319E1CE3292800B924C4 /* AddressCustomCell.h */,
+				45E6319F1CE3292800B924C4 /* AddressCustomCell.m */,
+				45E631A01CE3292800B924C4 /* AddressCustomCell.xib */,
+				45E631AC1CE33BF000B924C4 /* DetailAddress.h */,
+				45E631AD1CE33BF000B924C4 /* DetailAddress.m */,
+				45E631AE1CE33BF000B924C4 /* DetailAddress.xib */,
 			);
 			name = AddressTabbar;
 			sourceTree = "<group>";
@@ -306,6 +339,8 @@
 		4590240D1CE0380200D133B2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				45E631B11CE33DA500B924C4 /* Map */,
+				45E631A31CE32DBE00B924C4 /* Location */,
 				45E6318D1CE2E5A000B924C4 /* testbg.png */,
 				45879D351CE1D96200DC9250 /* Drink */,
 				45879D3C1CE1D96200DC9250 /* Fast Food */,
@@ -326,6 +361,26 @@
 				459024261CE04BE400D133B2 /* veganFood.png */,
 			);
 			path = "Menu Images";
+			sourceTree = "<group>";
+		};
+		45E631A31CE32DBE00B924C4 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				45E631AA1CE330A000B924C4 /* tgifridays.png */,
+				45E631A81CE32ED000B924C4 /* mcdonalds.jpg */,
+				45E631A61CE32DEC00B924C4 /* starbucks.png */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		45E631B11CE33DA500B924C4 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				45E631B21CE33DB300B924C4 /* mcDonaldsMap.png */,
+				45E631B31CE33DB300B924C4 /* starbucksMap.png */,
+				45E631B41CE33DB300B924C4 /* tgifridayMap.png */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,11 +442,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				45879D651CE1D96200DC9250 /* nonvegan7.png in Resources */,
+				45E631AB1CE330A000B924C4 /* tgifridays.png in Resources */,
+				45E631B51CE33DB300B924C4 /* mcDonaldsMap.png in Resources */,
 				45879D621CE1D96200DC9250 /* nonvegan4.png in Resources */,
 				459024271CE04BE400D133B2 /* drink.png in Resources */,
 				45879D6A1CE1D96200DC9250 /* vegan5.png in Resources */,
 				45879D681CE1D96200DC9250 /* vegan3.png in Resources */,
+				45E631B61CE33DB300B924C4 /* starbucksMap.png in Resources */,
 				45E631881CE2D17A00B924C4 /* ShowDetailScreen.xib in Resources */,
+				45E631A21CE3292800B924C4 /* AddressCustomCell.xib in Resources */,
 				45E6318E1CE2E5A000B924C4 /* testbg.png in Resources */,
 				45879D581CE1D96200DC9250 /* drink6.png in Resources */,
 				45879D561CE1D96200DC9250 /* drink4.png in Resources */,
@@ -403,6 +462,8 @@
 				45879D551CE1D96200DC9250 /* drink3.png in Resources */,
 				45879D591CE1D96200DC9250 /* fastfood1.png in Resources */,
 				45879D5A1CE1D96200DC9250 /* fastfood2.png in Resources */,
+				45E631A91CE32ED000B924C4 /* mcdonalds.jpg in Resources */,
+				45E631B71CE33DB300B924C4 /* tgifridayMap.png in Resources */,
 				459024291CE04BE400D133B2 /* nonVeganFood.png in Resources */,
 				45879D611CE1D96200DC9250 /* nonvegan3.png in Resources */,
 				45879D5C1CE1D96200DC9250 /* fastfood4.png in Resources */,
@@ -411,6 +472,7 @@
 				45879D5F1CE1D96200DC9250 /* nonvegan1.png in Resources */,
 				45879D5E1CE1D96200DC9250 /* fastfood6.png in Resources */,
 				45879D6C1CE1D96200DC9250 /* vegan7.png in Resources */,
+				45E631A71CE32DEC00B924C4 /* starbucks.png in Resources */,
 				45879D571CE1D96200DC9250 /* drink5.png in Resources */,
 				45879D541CE1D96200DC9250 /* drink2.png in Resources */,
 				4590242A1CE04BE400D133B2 /* veganFood.png in Resources */,
@@ -418,6 +480,7 @@
 				45879D641CE1D96200DC9250 /* nonvegan6.png in Resources */,
 				459023F11CE031AF00D133B2 /* Assets.xcassets in Resources */,
 				45E631931CE3139E00B924C4 /* SaleCustomCell.xib in Resources */,
+				45E631B01CE33BF000B924C4 /* DetailAddress.xib in Resources */,
 				45879D6B1CE1D96200DC9250 /* vegan6.png in Resources */,
 				45879D661CE1D96200DC9250 /* vegan1.png in Resources */,
 				45879D5D1CE1D96200DC9250 /* fastfood5.png in Resources */,
@@ -437,12 +500,15 @@
 				459024091CE0337100D133B2 /* AddressScreen.m in Sources */,
 				45879D2B1CE1956400DC9250 /* DetailFoodScreen.m in Sources */,
 				45879D341CE1D0E700DC9250 /* Food.m in Sources */,
+				45E631AF1CE33BF000B924C4 /* DetailAddress.m in Sources */,
 				4590240C1CE0338100D133B2 /* AboutScreen.m in Sources */,
 				459023E91CE031AF00D133B2 /* AppDelegate.m in Sources */,
 				45E631871CE2D17A00B924C4 /* ShowDetailScreen.m in Sources */,
+				454364521CE574DF0097F1BA /* ArrayFood.m in Sources */,
 				45879D2F1CE1C3E200DC9250 /* CustomCell.m in Sources */,
 				459023E61CE031AF00D133B2 /* main.m in Sources */,
 				459024101CE03F2D00D133B2 /* UIColor+Extend.m in Sources */,
+				45E631A11CE3292800B924C4 /* AddressCustomCell.m in Sources */,
 				459024321CE08DA400D133B2 /* File.swift in Sources */,
 				45E631921CE3139E00B924C4 /* SaleCustomCell.m in Sources */,
 				459024061CE0334500D133B2 /* SaleOffScreen.m in Sources */,

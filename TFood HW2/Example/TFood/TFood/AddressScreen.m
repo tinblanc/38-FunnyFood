@@ -7,31 +7,60 @@
 //
 
 #import "AddressScreen.h"
+#import "AddressCustomCell.h"
 
-@interface AddressScreen ()
+@interface AddressScreen () <UITableViewDataSource,UITableViewDelegate>
 
 @end
 
 @implementation AddressScreen
+{
+    NSArray* arrayShop ;
+    NSArray* arrayLocation;
+    NSArray* arrayLogo;
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    arrayShop = @[@"Starbucks", @"MC Donald's" , @"TGI Fridays"];
+    arrayLocation = @[@"United States", @"Hong Kong", @"Burgers, Western"];
+    arrayLogo = @[@"starbucks.png", @"mcdonalds.jpg",@"tgifridays.png"];
+    
+    
+    
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
+    
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"AddressCustomCell" bundle:nil] forCellReuseIdentifier:@"Cell"];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return arrayShop.count;
 }
 
-/*
-#pragma mark - Navigation
+-(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    AddressCustomCell* cell = (AddressCustomCell*)[tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
+    cell.lblName.text = arrayShop[indexPath.row];
+    cell.lblLocation.text = arrayLocation[indexPath.row];
+    cell.imgLogo.image = [UIImage imageNamed:arrayLogo[indexPath.row]];
+    
+    
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    return cell;
+    
 }
-*/
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100;
+}
+
 
 @end

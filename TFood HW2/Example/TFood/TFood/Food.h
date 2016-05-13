@@ -14,9 +14,11 @@
 @property ( nonatomic, strong) NSString* price;
 @property ( nonatomic, strong) UIImage* image;
 @property ( nonatomic, strong) NSString* saleOff;
+@property ( nonatomic, strong) NSString* category;
 
 -(instancetype) initWithName: (NSString*) name
                     andPrice: (NSString*) price
                    withImage: (NSString*) image
-                  andSaleOff: (NSString*) saleOff;
+                  andSaleOff: (NSString*) saleOff
+                withCategory: (NSString*) category;
 @end
